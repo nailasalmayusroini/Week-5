@@ -44,7 +44,7 @@ vector<string> fizzbuzzResult(100);
 
     bool testPassed = true;
     for (int i = 0; i < 100; i++) {
-        if (expectedResult[i] != fizzbuzzResult) {
+        if (expectedResult[i] != fizzbuzzResult[i]) {
         testPassed = false;
         break;
         }
