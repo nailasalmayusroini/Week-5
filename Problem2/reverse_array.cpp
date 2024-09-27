@@ -1,11 +1,35 @@
 #include <iostream>
-#include <vector>
-#include <string>
 using namespace std;
 
 int main() {
-    n [10] = 1,2,3,4,5,6,7,8,9,10;
- 
-    for (i=10; i<n; i-1)
-       \
+    int n;
+
+    // Ask the user for the size of the array
+    cout << "Array size: ";
+    cin >> n;
+
+    int arr[n];  // Declare a regular array of size n
+
+    // Ask the user to input elements of the array
+    cout << "Input: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    // Reverse the array in place
+    for (int i = 0; i < n / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+    }
+
+    // Print the reversed array
+    cout << "Output: [ ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << "]";
+    cout << endl;
+
+    return 0;
 }
