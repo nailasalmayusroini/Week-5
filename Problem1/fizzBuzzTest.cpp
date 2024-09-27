@@ -38,9 +38,10 @@ vector<string> fizzbuzzResult(100);
     }
     
     // the final output
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < 100; i++) {
         cout << fizzbuzzResult[i] << endl;
-
+    }
+        
 
     bool testPassed = true;
     for (int i = 0; i < 100; i++) {
